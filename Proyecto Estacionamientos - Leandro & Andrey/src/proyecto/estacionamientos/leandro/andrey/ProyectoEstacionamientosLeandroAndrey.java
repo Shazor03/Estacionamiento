@@ -10,7 +10,7 @@ package proyecto.estacionamientos.leandro.andrey;
  * @author Leandro Montero L
  */
 public class ProyectoEstacionamientosLeandroAndrey {
-
+    //Fecha de Inicio: 12/03/2019 - Fecha de Finalizacion: ?/?/?
     /**
      * @param args the command line arguments
      */

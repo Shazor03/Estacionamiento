@@ -12,7 +12,10 @@ import javax.swing.JOptionPane;
  * @author Leandro Montero L
  */
 public class Window_Login extends javax.swing.JFrame {
-
+//Elementos ya inicializados al arranque
+        String Usuario="hola";
+        String Contraseña="123";
+        
 
     /**
      * Creates new form Window_Login
@@ -63,7 +66,11 @@ public class Window_Login extends javax.swing.JFrame {
             }
         });
 
-        Campo_Contraseña.setText("jPasswordField1");
+        Campo_Contraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Campo_ContraseñaActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Entrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -119,10 +126,7 @@ public class Window_Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
              
-//Elementos ya inicializados al arranque
-        String Usuario="hola";
-        String Contraseña="123";
-        
+
 //Decodificacion de la contraseña
         String contraseñadec=new String(Campo_Contraseña.getPassword());
         String UsuarioInsertado= Campo_Usuario.getText();
@@ -145,6 +149,10 @@ public class Window_Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Usuario o Contraseña incorrecto");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void Campo_ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Campo_ContraseñaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Campo_ContraseñaActionPerformed
 
     
     
